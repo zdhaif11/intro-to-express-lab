@@ -91,19 +91,8 @@ app.get('/shoes', (req, res) => {
    
 });
    
-   
 
-
-app.get('/hello', (req, res) => {
-    // Accessing query parameters from the request
-    const name = req.query.name;
-    const age = req.query.age;
-
-    // Using the query parameters to customize the response
-    res.send(`Hello there, ${name}! I hear you are ${age} years old!`);
-});
-
-app.listen(8000, () => {
+app.listen(3000, () => {
     console.log('Listening on port 3000')
 })
 
