@@ -70,12 +70,12 @@ app.get('/shoes', (req, res) => {
             return shoe.price >= minp;
         })
     }
-    else if (maxp){
+    if (maxp){
         arrangedShoes = shoes.filter((shoe) =>{
             return shoe.price <= maxp;
         })
     }
-    else if (type){
+    if (type){
         arrangedShoes = shoes.filter((shoe) =>{ 
             return shoe.type === type;
         })
